@@ -10,6 +10,15 @@ body {
   background-color: #f5f7fa;
 }
 
+label,
+span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
 .main_section {
   display: flex;
   flex-direction: row-reverse;
@@ -21,20 +30,24 @@ body {
 }
 
 /* Main content section */
-
 .main_content_section {
   margin: 100px 90px;
   background-color: #fff;
-  border-radius: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .main_content_section h3 {
-  font-style: normal;
-  font-weight: bold;
   font-size: 22px;
+  font-weight: normal;
   line-height: 27px;
-  color: #000000;
   margin-bottom: 10px;
+  color: #fff;
+  background: #1e2939;
+  padding: 15px;
+  text-transform: uppercase;
 }
 
 /*  About me section */
@@ -43,7 +56,6 @@ body {
 }
 
 .about_me_section h1 {
-  font-style: normal;
   font-weight: bold;
   font-size: 45px;
   line-height: 55px;
@@ -52,18 +64,13 @@ body {
 }
 
 .about_me_section p {
-  width: 400px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
+  width: 500px;
   line-height: 24px;
   color: #595959;
 }
 
 .about_my_profession {
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
   line-height: 17px;
   color: #000000;
   margin-bottom: 20px;
@@ -74,37 +81,30 @@ body {
   margin-bottom: 50px;
 }
 
-.my_project_section ol {
+.my_project_section ol,
+.my_additional_education_section ol {
   padding: 0 0 0 17px;
 }
 
-.my_project_section a {
+.my_project_section a,
+.my_additional_education_section a {
   text-decoration: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+
   color: #595959;
 }
-.my_project_section a:hover {
+.my_project_section a:hover,
+.my_additional_education_section a:hover {
   text-decoration: underline;
   color: violet;
 }
 
 .my_project_section li,
-.my_project_section span {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
+.my_additional_education_section li {
+  font-weight: normal;
   color: #000000;
 }
 
 .project_item_list_content {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
   color: #595959;
   margin-left: 5px;
 }
@@ -114,7 +114,6 @@ body {
 }
 
 .my_work_section h4 {
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -123,7 +122,6 @@ body {
 }
 
 .my_work_section span {
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -134,35 +132,25 @@ body {
 .my_work_section p,
 .my_education_section p {
   margin: 10px 0;
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #a8a8a8;
 }
 
-.my_work_section label,
-.my_project_section label,
-.my_education_section label {
-  font-style: normal;
+.my_work_section h6 {
+  margin: 10px 0 0 0;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: #000000;
+  text-decoration: underline;
 }
 
 .my_work_section ul {
+  margin-top: 5px;
   padding: 0 0 0 17px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
   color: #595959;
 }
 
 /* My education section */
 .my_education_section h4 {
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -171,96 +159,75 @@ body {
 }
 
 .my_education_section h5 {
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
   line-height: 17px;
   color: #000000;
   margin: 10px 0;
 }
 
-/* Side bar sectio */
+/* Side bar section */
 .sidebar_section {
-  background: #1e2939;
+  background: #e1d8cf;
   width: 370px;
   padding-top: 40px;
   border-radius: 15px;
 }
 
-.my_photo {
-  width: 370px;
-  height: 354px;
-  margin-bottom: 50px;
+.sidebar_section img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto 50px auto;
+  border-radius: 50%;
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
 }
 
-.contacts,
-.tech_skills,
-.soft_skills {
-  margin-left: 40px;
-}
-
-.contacts {
-  margin-bottom: 50px;
-}
-
-.tech_skills,
-.soft_skills {
-  margin-bottom: 45px;
-}
-
-.tech_skills ul,
-.soft_skills ul {
-  padding: 0;
-  margin-left: 17px;
-}
-
-.tech_skills li,
-.soft_skills li {
+.sidebar_block {
+  margin: 0 0 50px 40px;
+  width: 300px;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
   line-height: 24px;
-  color: #fb6d3a;
+  font-size: 14px;
+  color: #000;
 }
 
-.tech_skills span,
-.soft_skills span {
+.sidebar_block h3 {
   color: #fff;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.sidebar_title {
-  color: #fff;
-  font-style: normal;
-  font-weight: bold;
   font-size: 22px;
   line-height: 27px;
-  margin-bottom: 10px;
-}
-
-.contacts_type {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: #fff;
-  margin-right: 10px;
-}
-
-.contact_link_email,
-.contact_link_phone {
-  font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #565e6a;
-  opacity: 0.5;
+  margin-bottom: 10px;
+  background: #1e2939;
+  padding: 15px;
+  text-transform: uppercase;
+  /* text-align: center;
+  border-top-right-radius: 20%;
+  border-top-left-radius: 20%; */
 }
 
-.contact_link_phone {
+.sidebar_block ul {
+  margin-left: 30px;
+  padding: 0px;
+}
+
+.sidebar_block li {
+  color: #373741;
+  padding-bottom: 2px;
+}
+
+.sidebar_block p {
+  font-size: 13px;
+  margin: 0px 0px 0px 10px;
+  padding: 4px 0;
+}
+
+.sidebar_block p > a {
+  color: #000;
   text-decoration: none;
+}
+
+.sidebar_block p > a:hover {
+  color: blue;
+  text-decoration: underline;
 }
