@@ -16,7 +16,7 @@ span {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #000000;
+  color: #000;
 }
 
 .main_section {
@@ -89,13 +89,12 @@ span {
 .my_project_section a,
 .my_additional_education_section a {
   text-decoration: none;
-
   color: #595959;
 }
 .my_project_section a:hover,
 .my_additional_education_section a:hover {
   text-decoration: underline;
-  color: violet;
+  color: blue;
 }
 
 .my_project_section li,
@@ -211,9 +210,10 @@ span {
   padding: 0px;
 }
 
-.sidebar_block li {
+.sidebar_block li > span {
   color: #373741;
   padding-bottom: 2px;
+  font-weight: normal;
 }
 
 .sidebar_block p {
